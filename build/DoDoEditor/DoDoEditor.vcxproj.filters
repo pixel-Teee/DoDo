@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\DoDo\DoDoEditor\Editor\Test.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\DoDo\DoDoEditor\Editor\Test.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\DoDo\DoDoEditor\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{9A83613A-9AA2-3974-A07F-BEE0C14BE6B2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
