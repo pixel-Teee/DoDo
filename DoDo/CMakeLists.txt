@@ -8,6 +8,8 @@ file(GLOB_RECURSE DoDoSource
 "Source/Application/*.h"
 "Source/Application/*.cpp")
 
-source_group(TREE ${CMAKE_SOURCE_DIR}/DoDo FILES ${DoDoSource})
+if(MSVC)
+	source_group(TREE ${CMAKE_SOURCE_DIR}/DoDo FILES ${DoDoSource})
+endif()
 
 add_library(DoDo STATIC ${DoDoSource})

@@ -7,7 +7,9 @@ file(GLOB DoDoSource
 "Editor/*.cpp"
 )
 
-source_group(TREE ${CMAKE_SOURCE_DIR}/DoDoEditor FILES ${DoDoSource})
+if(MSVC)
+	source_group(TREE ${CMAKE_SOURCE_DIR}/DoDoEditor FILES ${DoDoSource})
+endif()
 
 add_executable(DoDoEditor ${DoDoSource})
 
