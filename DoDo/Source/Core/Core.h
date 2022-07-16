@@ -11,5 +11,5 @@
 		#define DODO_API
 #endif
 #else
-
+    #define DODO_API
 #endif

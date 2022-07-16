@@ -2,6 +2,7 @@
 
 //------STL------
 #include <iostream>
+#include <cstdint>
 //------STL------
 
 //------Third Party------
