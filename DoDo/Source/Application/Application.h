@@ -1,9 +1,13 @@
+#pragma once
+
 namespace DoDo
 {
-	class Application
+	class DODO_API Application
 	{
 	public:
 		Application();
 		virtual ~Application();
 	};
+
+	Application* CreateApplication();
 }

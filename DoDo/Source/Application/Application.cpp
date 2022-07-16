@@ -1,3 +1,5 @@
+#include "dodopch.h"
+
 #include "Application.h"
 
 namespace DoDo

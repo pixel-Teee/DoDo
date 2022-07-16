@@ -1,3 +1,7 @@
+#pragma once
+#include <dodo.h>
+#include <EntryPoint/EntryPoint.h>
+
 #include "Application/Application.h"
 
 namespace DoDo 
@@ -8,4 +12,9 @@ namespace DoDo
 		DoDoEditor();
 		virtual ~DoDoEditor();
 	};
+
+	Application* CreateApplication()
+	{
+		return new DoDoEditor();
+	}
 }
