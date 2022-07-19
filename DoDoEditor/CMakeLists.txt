@@ -29,7 +29,3 @@ target_compile_definitions(DoDoEditor
 PRIVATE DODO_PLATFORM_WINDOWS
 DODO_DYNAMIC_LINK)
 endif()
-
-if(MSVC)
-file(COPY ${CMAKE_SOURCE_DIR}/bin/DoDo/Debug/DoDo.dll DESTINATION ${CMAKE_SOURCE_DIR}/bin/${PROJECT_NAME}/Debug)
-endif()

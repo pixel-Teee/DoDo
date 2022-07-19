@@ -26,10 +26,10 @@ target_include_directories(DoDo PRIVATE
 "Source")
 
 if(MSVC)
-target_compile_definitions(DoDo
-PRIVATE DODO_PLATFORM_WINDOWS
-DODO_DYNAMIC_LINK
-DODO_BUILD_DLL)
+	target_compile_definitions(DoDo
+	PRIVATE DODO_PLATFORM_WINDOWS
+	DODO_DYNAMIC_LINK
+	DODO_BUILD_DLL)
 endif()
 
 target_precompile_headers(DoDo
