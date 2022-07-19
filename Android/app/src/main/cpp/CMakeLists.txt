@@ -22,6 +22,11 @@ add_library(
         SHARED
         ${DoDoSource})
 
+add_library(
+        app-glue
+        STATIC
+        ${ANDROID_NDK}/sources/android/native_app_glue/android_native_app_glue.c)
+
 target_precompile_headers(DoDo
         PUBLIC "${DoDoSourceDir}/Source/dodopch.h")
 
@@ -31,4 +36,5 @@ find_library(
 
 target_link_libraries(
         DoDo
-        ${log-lib})
+        ${log-lib}
+        app-glue)

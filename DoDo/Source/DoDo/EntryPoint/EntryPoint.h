@@ -9,7 +9,7 @@ int main()
     auto app = DoDo::CreateApplication();
 
     delete app;
-
+    
     std::cout << "Hello World!" << std::endl;
     return 0;
 }
