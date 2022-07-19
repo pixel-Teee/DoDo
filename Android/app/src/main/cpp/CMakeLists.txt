@@ -7,9 +7,9 @@ set(DoDoSourceDir ../../../../../DoDo)
 message(${DoDoSourceDir})
 
 file(GLOB_RECURSE DoDoSource
-"${DoDoSourceDir}/dodo.h"
-"${DoDoSourceDir}/dodopch.h"
-"${DoDoSourceDir}/dodopch.cpp"
+"${DoDoSourceDir}/Source/dodo.h"
+"${DoDoSourceDir}/Source//dodopch.h"
+"${DoDoSourceDir}/Source//dodopch.cpp"
 "${DoDoSourceDir}/Source/EntryPoint/*.h"
 "${DoDoSourceDir}/Source/EntryPoint/*.cpp"
 "${DoDoSourceDir}/Source/Application/*.h"
