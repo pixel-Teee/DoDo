@@ -3,14 +3,15 @@
 project(DoDo)
 
 file(GLOB_RECURSE DoDoSource
-"Source/*.h"
-"Source/*.cpp"
-"DoDo/Source/EntryPoint/*.h"
-"DoDo/Source/EntryPoint/*.cpp"
-"DoDo/Source/Application/*.h"
-"DoDo/Source/Application/*.cpp"
-"DoDo/Source/Core/*.h"
-"DoDo/Source/Core/*.cpp")
+"Source/dodo.h"
+"Source/dodopch.h"
+"Source/dodopch.cpp"
+"Source/DoDo/EntryPoint/*.h"
+"Source/DoDo/EntryPoint/*.cpp"
+"Source/DoDo/Application/*.h"
+"Source/DoDo/Application/*.cpp"
+"Source/DoDo/Core/*.h"
+"Source/DoDo/Core/*.cpp")
 
 if(MSVC)
 	source_group(TREE ${CMAKE_SOURCE_DIR}/DoDo FILES ${DoDoSource})
