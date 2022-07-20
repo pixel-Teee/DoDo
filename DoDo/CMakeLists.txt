@@ -1,4 +1,4 @@
-﻿cmake_minimum_required(VERSION 3.20)
+﻿cmake_minimum_required(VERSION 3.18)
 
 project(DoDo)
 
@@ -38,8 +38,10 @@ PUBLIC "Source/dodopch.h")
 
 message(${PROJECT_SOURCE_DIR})
 
+if(MSVC)
 # copy dll
 add_custom_command(TARGET DoDo POST_BUILD
 COMMAND ${CMAKE_COMMAND} -E copy_directory
 	$<TARGET_FILE_DIR:DoDo>
 	$<TARGET_FILE_DIR:DoDoEditor>)
+endif()
