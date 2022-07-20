@@ -25,7 +25,7 @@ PRIVATE
 "../DoDo/Source")
 
 if(MSVC)
-target_compile_definitions(DoDoEditor
-PRIVATE DODO_PLATFORM_WINDOWS
-DODO_DYNAMIC_LINK)
+	target_compile_definitions(DoDoEditor
+		PRIVATE DODO_PLATFORM_WINDOWS
+		DODO_DYNAMIC_LINK)
 endif()
