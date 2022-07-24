@@ -1,6 +1,10 @@
 cd ..
 cd ..
 mkdir build
+mkdir bin
+cd bin
+mkdir output
+cd ..
 cd build
 mkdir Windows
 cd Windows

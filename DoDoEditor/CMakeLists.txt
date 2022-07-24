@@ -24,8 +24,15 @@ target_include_directories(DoDoEditor
 PRIVATE
 "../DoDo/Source")
 
+# copy dll
 if(MSVC)
 	target_compile_definitions(DoDoEditor
 		PRIVATE DODO_PLATFORM_WINDOWS
 		DODO_DYNAMIC_LINK)
+
+	add_custom_command(TARGET DoDoEditor POST_BUILD
+		COMMAND ${CMAKE_COMMAND} -E copy_directory
+		$<TARGET_FILE_DIR:DoDo>
+		$<TARGET_FILE_DIR:DoDoEditor>)
 endif()
+
